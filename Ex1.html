@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="colors.js"></script>
+</head>
+<body>
+  <h1 style="text-decoration: none; color: black;"><a href="index.html">WEB</a></h1>
+  <!-- <input type="button" value="night" onclick="
+    document.querySelector('body').style.background='black';
+    document.querySelector('body').style.color='white';">
+    <input type="button" value="day" onclick="
+    document.querySelector('body').style.background='white';
+    document.querySelector('body').style.color='black';"> -->
+  <input type="button" value="night" onclick="nightDayHandler(this);">
+  <ol>
+    <li><a href="1.html">HTML</a></li>
+    <li><a href="2.html">CSS</a></li>
+    <li><a href="3.html">JavaScript</a></li>
+  </ol>
+  <h2 style="color: blue;">Javascript</h2>
+  <p>
+    hello
+  </p>
+
+
+  <!-- Just practice -->
+  <!-- <script>
+    let i = 0;
+    let arr = ['a', 'b', 'c', 'd']
+    while (i < arr.length) {
+      document.write('<li>' + arr[i] + '</li>');
+      i = i + 1;
+    }
+    function sum(x,y){
+      return x+y;
+    }
+
+    document.write('<h2>&lt;function&gt;</h2><br>');
+    document.write('<div style="color:red">'+sum(8,2)+'</div>');
+    document.write('<div style="font-size:3rem;">'+sum(2,5)+'</div>');
+
+    document.write('<h2>&lt;Object&gt;</h2><br>');
+    let coworkers={
+      "programmer":"Eunhee", //programmer, designer 등은 프로퍼티라고 부름. 
+      "designer":"Kim"
+    };
+
+    document.write("programmer : "+coworkers.programmer+"<br>");
+    coworkers.newWorker = "Jang";
+    document.write("newWorker : "+coworkers.newWorker+"<br>");
+
+    // 혹은 아래와 같이 해도 됨. 이런식으로 쓰면 띄어쓰기도 가능
+    coworkers["data scientist"] = "Kang";
+    document.write("data scientist : "+coworkers["data scientist"]);
+  </script>
+  <h2>&lt;Iterate&gt;</h2>
+  <script>
+    for(let key in coworkers){
+      document.write(key+" : "+coworkers[key]+"<br>");
+    }
+  </script>
+  <h2>&lt;Property & Method&gt;</h2>
+  <script>
+    coworkers.showAll = function(){
+      for(let key in this){ //this를 쓰면 coworker 이름이 바껴도 일일히 안고쳐도 됨.
+        document.write(key+" : "+this[key]+"<br>");
+      }
+    }
+    coworkers.showAll();
+  </script> -->
+</body>
+</html>
